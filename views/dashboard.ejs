@@ -1,0 +1,14 @@
+    <h1><%= title %></h1>
+<p>пользователь: <strong><%= user.fio %></strong></p>
+
+<h2>список заявок</h2>
+<ul>  
+    <% requests.forEach(request => { %> 
+    
+    <li>
+    <%= request.room_name %> - <em><%= request.status %></em>
+    </li>
+    
+    <% }) %>
+    
+</ul>
